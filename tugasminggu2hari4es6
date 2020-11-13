@@ -1,0 +1,54 @@
+//1. mengubah fungsi menjadi fungsi arrow
+
+var golden = () => {
+     console.log("this is golden!!")
+}
+
+   
+  golden()
+
+
+//2. sederhanakan menjadi object literal di es6
+  const newFunction = (firstName, lastName)=> {
+  return {
+    
+    fullName: () => {
+      console.log `${firstName} ${lastName}`
+      return 
+    }
+  }
+}
+ 
+//Driver Code 
+newFunction("William", "Imoh").fullName() 
+
+
+//3. destructing
+const newObject = {
+  firstName: "Harry",
+  lastName: "Potter Holt",
+  destination: "Hogwarts React Conf",
+  occupation: "Deve-wizard Avocado",
+  spell: "Vimulus Renderus!!!"
+}
+
+const {firstName, lastName, destination, occupation, spell} = newObject;
+
+// Driver code
+console.log(firstName, lastName, destination, occupation)
+
+
+//4. array spreading
+const west = ["Will", "Chris", "Sam", "Holly"]
+const east = ["Gill", "Brian", "Noel", "Maggie"]
+const combined = [...west, ...east]
+//Driver Code
+console.log(combined)
+
+
+//5. template literals
+const planet = "earth" 
+const view = "glass" 
+var before = `Lorem ${view} dolor sit amet, consectetur adipiscing elit, ${planet} do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam`   
+// Driver Code 
+console.log(before) 
